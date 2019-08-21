@@ -9,6 +9,10 @@
 import Foundation
 
 public struct DigitAccumulator {
+    public enum DigitAccumulatorError: Error {
+        case extraDecimalPoint
+        case invalidNumberValue
+    }
     
     public enum Digit: Equatable {
         case decimalPoint
@@ -23,23 +27,45 @@ public struct DigitAccumulator {
         
     }
     
-    public mutating func add(digit: Digit) {
+    public mutating func add(digit: Digit) throws {
+        // TODO: Test both of these error conditions
+        
         switch digit {
         case .decimalPoint:
             // add decimal
             print(".")
+            
+            if digits.contains(.decimalPoint) {
+                throw DigitAccumulatorError.extraDecimalPoint
+            }
+            digits.append(digit)
         case .number(let value):
             // add the value to accumulator
             print(value)
+            if value < 0 || value > 9 {
+                throw DigitAccumulatorError.invalidNumberValue
+            }
+            digits.append(digit)
         }
     }
     
     public mutating func clear() {
-        
+        digits.removeAll()
     }
     
     public func value() -> Double? {
         // add everything up
-        return nil
+        
+        // 1 . 0  -> "1" "." "0" -> "1.0" -> 1.0
+        let numberString = digits.map { (digit) -> String in
+            switch digit {
+            case .decimalPoint:
+                return "."
+            case .number(let number):
+                return String(number)
+            }
+        }.joined()
+        
+        return Double.init(numberString) // Double(numberString)
     }
 }
