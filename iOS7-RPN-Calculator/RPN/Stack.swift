@@ -40,4 +40,8 @@ public struct Stack<Element>: ExpressibleByArrayLiteral {
     public mutating func pop() -> Element? {
         return items.popLast()
     }
+    
+    public func peek() -> Element? {
+        return items.last
+    }
 }

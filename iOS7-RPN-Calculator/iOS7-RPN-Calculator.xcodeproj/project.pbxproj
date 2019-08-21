@@ -17,6 +17,10 @@
 		BD52BE75230DA9D70078A7E4 /* RPN.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD52BE5F230DA9D70078A7E4 /* RPN.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BD52BE7E230DABCF0078A7E4 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD52BE7D230DABCF0078A7E4 /* Stack.swift */; };
 		BD52BE80230DAD140078A7E4 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD52BE7F230DAD140078A7E4 /* StackTests.swift */; };
+		BD52BE82230DB3590078A7E4 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD52BE81230DB3590078A7E4 /* Calculator.swift */; };
+		BD52BE84230DB4880078A7E4 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD52BE83230DB4880078A7E4 /* CalculatorTests.swift */; };
+		BD52BE85230DBB770078A7E4 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD52BE56230DA8C10078A7E4 /* CalculatorViewController.swift */; };
+		BD52BE87230DBD0D0078A7E4 /* DigitAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD52BE86230DBD0D0078A7E4 /* DigitAccumulator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,9 @@
 		BD52BE70230DA9D70078A7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD52BE7D230DABCF0078A7E4 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		BD52BE7F230DAD140078A7E4 /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
+		BD52BE81230DB3590078A7E4 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		BD52BE83230DB4880078A7E4 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
+		BD52BE86230DBD0D0078A7E4 /* DigitAccumulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitAccumulator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +147,8 @@
 				BD52BE61230DA9D70078A7E4 /* RPN.h */,
 				BD52BE62230DA9D70078A7E4 /* Info.plist */,
 				BD52BE7D230DABCF0078A7E4 /* Stack.swift */,
+				BD52BE86230DBD0D0078A7E4 /* DigitAccumulator.swift */,
+				BD52BE81230DB3590078A7E4 /* Calculator.swift */,
 			);
 			path = RPN;
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				BD52BE7F230DAD140078A7E4 /* StackTests.swift */,
+				BD52BE83230DB4880078A7E4 /* CalculatorTests.swift */,
 				BD52BE70230DA9D70078A7E4 /* Info.plist */,
 			);
 			path = RPNTests;
@@ -298,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD52BE85230DBB770078A7E4 /* CalculatorViewController.swift in Sources */,
 				BD52BE44230DA8750078A7E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +318,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD52BE7E230DABCF0078A7E4 /* Stack.swift in Sources */,
+				BD52BE87230DBD0D0078A7E4 /* DigitAccumulator.swift in Sources */,
+				BD52BE82230DB3590078A7E4 /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD52BE80230DAD140078A7E4 /* StackTests.swift in Sources */,
+				BD52BE84230DB4880078A7E4 /* CalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,15 +31,15 @@ class CalculatorViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    private var digitAccumulator = DigitAccumulator() {
-        didSet {
-            if let value = digitAccumulator.value() {
-                textField.text = numberFormatter.string(from: value as NSNumber)
-            } else {
-                textField.text = ""
-            }
-        }
-    }
+//    private var digitAccumulator = DigitAccumulator() {
+//        didSet {
+//            if let value = digitAccumulator.value() {
+//                textField.text = numberFormatter.string(from: value as NSNumber)
+//            } else {
+//                textField.text = ""
+//            }
+//        }
+//    }
     
     @IBAction func numberButtonTapped(_ sender: UIButton) {
 
