@@ -12,10 +12,11 @@
 		BD52BE4E230DA8770078A7E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD52BE4C230DA8770078A7E4 /* LaunchScreen.storyboard */; };
 		BD52BE57230DA8C10078A7E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD52BE55230DA8C10078A7E4 /* Main.storyboard */; };
 		BD52BE68230DA9D70078A7E4 /* RPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD52BE5F230DA9D70078A7E4 /* RPN.framework */; };
-		BD52BE6F230DA9D70078A7E4 /* RPNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD52BE6E230DA9D70078A7E4 /* RPNTests.swift */; };
 		BD52BE71230DA9D70078A7E4 /* RPN.h in Headers */ = {isa = PBXBuildFile; fileRef = BD52BE61230DA9D70078A7E4 /* RPN.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD52BE74230DA9D70078A7E4 /* RPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD52BE5F230DA9D70078A7E4 /* RPN.framework */; };
 		BD52BE75230DA9D70078A7E4 /* RPN.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD52BE5F230DA9D70078A7E4 /* RPN.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD52BE7E230DABCF0078A7E4 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD52BE7D230DABCF0078A7E4 /* Stack.swift */; };
+		BD52BE80230DAD140078A7E4 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD52BE7F230DAD140078A7E4 /* StackTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +69,9 @@
 		BD52BE61230DA9D70078A7E4 /* RPN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPN.h; sourceTree = "<group>"; };
 		BD52BE62230DA9D70078A7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD52BE67230DA9D70078A7E4 /* RPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD52BE6E230DA9D70078A7E4 /* RPNTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPNTests.swift; sourceTree = "<group>"; };
 		BD52BE70230DA9D70078A7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD52BE7D230DABCF0078A7E4 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		BD52BE7F230DAD140078A7E4 /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				BD52BE61230DA9D70078A7E4 /* RPN.h */,
 				BD52BE62230DA9D70078A7E4 /* Info.plist */,
+				BD52BE7D230DABCF0078A7E4 /* Stack.swift */,
 			);
 			path = RPN;
 			sourceTree = "<group>";
@@ -144,7 +147,7 @@
 		BD52BE6D230DA9D70078A7E4 /* RPNTests */ = {
 			isa = PBXGroup;
 			children = (
-				BD52BE6E230DA9D70078A7E4 /* RPNTests.swift */,
+				BD52BE7F230DAD140078A7E4 /* StackTests.swift */,
 				BD52BE70230DA9D70078A7E4 /* Info.plist */,
 			);
 			path = RPNTests;
@@ -235,6 +238,7 @@
 					};
 					BD52BE5E230DA9D70078A7E4 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					BD52BE66230DA9D70078A7E4 = {
 						CreatedOnToolsVersion = 10.3;
@@ -302,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD52BE7E230DABCF0078A7E4 /* Stack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD52BE6F230DA9D70078A7E4 /* RPNTests.swift in Sources */,
+				BD52BE80230DAD140078A7E4 /* StackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +469,7 @@
 		BD52BE53230DA8770078A7E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
@@ -482,6 +488,7 @@
 		BD52BE54230DA8770078A7E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
@@ -500,6 +507,7 @@
 		BD52BE77230DA9D70078A7E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -518,6 +526,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.RPN;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -528,6 +537,7 @@
 		BD52BE78230DA9D70078A7E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
